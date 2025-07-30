@@ -1,13 +1,25 @@
 import SidebarItem from './sidebarItem';
 import SidebarData from './sidebarData';
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
   return (
-    <div className="w-64 h-screen bg-yellow-100 p-4 shadow-md">
-      <h2 className="text-xl font-bold mb-4">My App</h2>
-      {SidebarData.map(item => (
-        <SidebarItem key={item.id} icon={item.icon} title={item.title} />
-      ))}
+    <div className="side-bar flex flex-col min-h-svh p-2 w-64 gap-2">
+      <nav className="flex flex-col min-h-svh gap-2">
+        {SidebarData.map((item) => (
+          <SidebarItem key={item.id} title={item.title} link={item.link} icon={item.icon} />
+        ))}
+      </nav>
+      <div>
+        <span>
+          <span>
+            <img src='' />
+          </span>
+          <span>
+            User name
+          </span>
+        </span>
+        <span></span>
+      </div>
     </div>
   );
 };

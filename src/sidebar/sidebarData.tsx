@@ -1,28 +1,36 @@
-import { FaHome, FaUser } from 'react-icons/fa';
-import React from 'react';
-import { FaGlassWaterDroplet } from 'react-icons/fa6';
+import React from "react";
 
 export type SidebarItemType = {
   id: number;
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
+  link: string;
 };
 
 const SidebarData: SidebarItemType[] = [
   {
     id: 1,
-    title: 'Home',
-    icon: <FaHome />,
+    title: "Домашняя страница",
+    icon: undefined,
+    link: "/trello/index.html",
   },
   {
     id: 2,
-    title: 'Profile',
-    icon: <FaUser />,
+    title: "Команда",
+    icon: undefined,
+    link: "/trello/team.html",
   },
   {
     id: 3,
-    title: 'Setting',
-    icon: <FaGlassWaterDroplet />,
+    title: "Проекты",
+    icon: undefined,
+    link: "/trello/projects.html",
+  },
+  {
+    id: 4,
+    title: "Настройки",
+    icon: undefined,
+    link: "/trello/settings.html",
   },
 ];
 

@@ -1,15 +1,16 @@
-import React from 'react';
+import React from "react";
 
 type SidebarItemProps = {
-  icon: React.ReactNode;
   title: string;
+  link: string;
+  icon?: React.ReactNode;
 };
 
-const SidebarItem = ({ icon, title }: SidebarItemProps) => {
+const SidebarItem: React.FC<SidebarItemProps> = ({ title, link, icon }) => {
   return (
-    <a className="flex items-center gap-2 p-2 hover:bg-gray-200 rounded" href="#">
-      <span>{icon}</span>
-      <span>{title}</span>
+    <a className="list-a flex items-center gap-3 w-full font-medium px-3 py-3 hover:bg-white/20" href={link}>
+      {icon && <span>{icon}</span>}
+      {title}
     </a>
   );
 };

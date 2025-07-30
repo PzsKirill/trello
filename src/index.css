@@ -1,3 +1,66 @@
 @import "tailwindcss";
 
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background: #00000057;
+    font-family: "Montserrat", sans-serif;
+}
+
+.side-bar {
+    background: oklch(14.077% 0.0044 285.776 / 0.77);
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.list-a {
+    color: aliceblue;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.error-title {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20vw;
+}
+
+.back-btn__error {
+    max-width: 450px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    background: #50ff06;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.back-btn__error:hover {
+    background: #51ff06a1;
+}
+
+.background {
+  background-image: url(../src/images/1679362166_bogatyr-club-p-oboi-na-rabochii-stol-bezmyatezhnost-foni-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;      
+  background-position: bottom; 
+  width: 100%;
+  min-height: 100vh;          
+}
+
+.background-work {
+  background-image: url(../src/images/1679362185_bogatyr-club-p-oboi-na-rabochii-stol-bezmyatezhnost-foni-52.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;  
+}
