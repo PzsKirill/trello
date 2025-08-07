@@ -1,0 +1,12 @@
+.u-container {
+    transition: all 0.15s ease-in-out;
+}
+
+.u-container:hover .user-name {
+    color: black;
+}
+
+.user-name {
+    text-transform: uppercase;
+    color: aliceblue;
+}

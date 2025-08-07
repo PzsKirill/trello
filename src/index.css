@@ -9,10 +9,23 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+/**/
+
+.app-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+}
+
+/**/
+
 .side-bar {
     background: oklch(14.077% 0.0044 285.776 / 0.77);
     border-radius: 15px;
-    margin: 15px;
+    max-width: 300px;
+    width: 100%;
 }
 
 .list-a {
@@ -20,6 +33,8 @@ body {
     border-radius: 10px;
     transition: all 0.15s ease-in-out;
 }
+
+/**/
 
 .error-title {
     display: flex;
@@ -64,3 +79,4 @@ body {
   width: 100%;
   min-height: 100vh;  
 }
+

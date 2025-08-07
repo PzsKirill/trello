@@ -31,7 +31,7 @@ const SidebarData: SidebarItemType[] = [
     title: "Настройки",
     icon: undefined,
     link: "/trello/settings.html",
-  },
+  }
 ];
 
 export default SidebarData;

@@ -1,24 +1,20 @@
 import SidebarItem from './sidebarItem';
 import SidebarData from './sidebarData';
+import AccountDropdown from './AccountDropdown';
+import './style/AccountDropdown.css'
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="side-bar flex flex-col min-h-svh p-2 w-64 gap-2">
-      <nav className="flex flex-col min-h-svh gap-2">
+    <div className="side-bar flex flex-col min-h-svh p-2 gap-2 justify-between">
+      <nav className="flex flex-col gap-2">
         {SidebarData.map((item) => (
           <SidebarItem key={item.id} title={item.title} link={item.link} icon={item.icon} />
         ))}
       </nav>
-      <div>
-        <span>
-          <span>
-            <img src='' />
-          </span>
-          <span>
-            User name
-          </span>
-        </span>
-        <span></span>
+
+      {/* Вкладка аккаунта */}
+      <div className="pt-4">
+        <AccountDropdown />
       </div>
     </div>
   );
