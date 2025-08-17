@@ -1,0 +1,44 @@
+.trello-container {
+    width: 100%;
+}
+
+.trello-top {
+    display: flex;
+    gap: 20px;
+}
+
+.trello-search {
+    max-width: 70%;
+    transition: all 0.3s linear;
+    padding: 10px 20px;
+}
+
+.trello-search:focus {
+    border-radius: 30px;
+    border: 1px solid;
+    outline: transparent;
+}
+
+.trello-btn {
+    max-width: 250px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.trello-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow: visible;
+}
+
+.trello-card {
+    max-width: 350px;
+    min-height: 305px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
