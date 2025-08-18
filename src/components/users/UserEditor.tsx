@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import type { User, UserRole } from './types';
+import type * as types from './types';
 
 export default function UserEditor({
   initial,
   onCancel,
   onSave,
 }: {
-  initial: User;
+  initial: types.User;
   onCancel: () => void;
-  onSave: (user: User) => void;
+  onSave: (user: types.User) => void;
 }) {
-  const [form, setForm] = useState<User>({ ...initial });
+  const [form, setForm] = useState<types.User>({ ...initial });
   const [errors, setErrors] = useState<{ name?: string; email?: string }>({});
 
   function validate(): boolean {
@@ -22,7 +22,7 @@ export default function UserEditor({
     return Object.keys(next).length === 0;
   }
 
-  function handleChange<K extends keyof User>(key: K, value: User[K]) {
+  function handleChange<K extends keyof types.User>(key: K, value: types.User[K]) {
     setForm((f) => ({ ...f, [key]: value }));
   }
 
@@ -67,7 +67,7 @@ export default function UserEditor({
           <select
             className="w-full border px-3 py-2 rounded"
             value={form.role}
-            onChange={(e) => handleChange('role', e.target.value as UserRole)}
+            onChange={(e) => handleChange('role', e.target.value as types.UserRole)}
           >
             <option value="employee">Сотрудник</option>
             <option value="admin">Администратор</option>
