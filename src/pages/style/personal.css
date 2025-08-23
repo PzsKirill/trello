@@ -1,0 +1,21 @@
+.personal-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.table-personal {
+    max-width: 100%;
+    width: 100%;
+}
+
+.trello-search {
+    max-width: 50%;
+    transition: all 0.3s linear;
+    padding: 10px 20px;
+}
+
+.trello-search:focus {
+    border-radius: 30px;
+    border: 1px solid;
+    outline: transparent;
+}

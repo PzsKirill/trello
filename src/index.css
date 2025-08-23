@@ -61,22 +61,3 @@ body {
 .back-btn__error:hover {
     background: #51ff06a1;
 }
-
-.background {
-  background-image: url(../src/images/1679362166_bogatyr-club-p-oboi-na-rabochii-stol-bezmyatezhnost-foni-4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;      
-  background-position: bottom; 
-  width: 100%;
-  min-height: 100vh;          
-}
-
-.background-work {
-  background-image: url(../src/images/1679362185_bogatyr-club-p-oboi-na-rabochii-stol-bezmyatezhnost-foni-52.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;     
-  background-position: center;
-  width: 100%;
-  min-height: 100vh;  
-}
-

@@ -37,8 +37,9 @@
 .trello-card {
     max-width: 350px;
     min-height: 305px;
-    background-color: rgb(255, 255, 255);
+    background-color: oklch(14.077% 0.0044 285.776 / 0.77);
     border-radius: 15px;
     padding: 20px;
     width: 100%;
+    color: aliceblue;
 }
